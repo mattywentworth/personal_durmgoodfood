@@ -1,0 +1,283 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*
+@font-face {
+    font-family: "Lexend";
+    src: url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+}
+*/
+
+nav {
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    vertical-align: middle;
+    padding: 10px 10px;
+    border-bottom: 2px black solid;
+}
+
+.logo, nav ul, nav li {
+    display: inline-block;   
+}
+
+.logo, nav ul { 
+    z-index: 10;
+}
+
+.logo {
+    font-family: /* why isn't this font working? */"Lobster", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    left: 30px;
+}
+
+.logo a:link {
+    text-decoration: none;
+}
+
+#durm {
+    color: #EF3C40;
+}
+
+#good {
+    color: #FFD144;
+    font-weight: 700;
+}
+
+#food {
+    color: #005390;
+}
+
+nav ul {
+    vertical-align: middle;
+    float: right;
+    margin: 0px 10px; /* why does it seem like the margin value of 10px isn't being applied? The only reason it's not showing up off the screen is due to the padding value of nav li? */
+}
+
+nav li {
+    padding: 10px 10px;
+}
+
+#navbar:hover {
+    color: white;
+    background-color: black;
+}
+
+main {
+    position: relative;
+    top: 100px;
+    margin: 10px;
+}
+
+#column-left, #column-right {
+    display: inline-block;
+}
+
+#column-left {
+    width: 50%;
+}
+
+#column-right {
+    /* anything needed here? */
+    width: 50%;
+    position: absolute;
+    top: 50px;
+}
+
+h1 {
+    margin: 20px 0px;
+}
+
+.tagsdiv {
+    margin: 10px 0px;
+}
+
+.tags {
+    display: inline-block;
+    padding: 5px 5px;
+    color: white;
+    background-color: black;
+    margin: 3px;
+}
+
+h2, h3, h4, h5, h6 {
+    padding: 60px 20px;
+    margin: 20px 0px;
+}
+
+h2 {
+    background-color:aquamarine;
+}
+
+h3 {
+    background-color:coral;
+}
+
+h4 {
+    background-color:lightskyblue;
+}
+
+h5 {
+    background-color:darkgoldenrod;
+}
+
+h6 {
+    background-color:olive
+}
+
+/* sytling for column 2 - should this be somewhere else? */
+
+#menu {
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 22px;
+    border: 2px solid black;
+    display: block;
+    width: 50%;
+}
+
+#menu:link {
+    text-decoration: none;
+}
+
+#menu:hover {
+    color: white;
+    background-color: black;
+}
+
+.restaurant-images {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.images-row-1, .images-row-2, .images-row-3 {
+    text-align: center;
+}
+
+.image-row {
+    display: inline-block;
+    height: 200px;
+    margin: 10px 10px;
+}
+
+.restaurant-images img {
+    height: 200px;
+    margin: 10px 10px;
+}
+
+footer {
+    position: relative;
+    top: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+
+.social {
+    width: 30%;
+    display: inline-block;
+}
+
+.social p {
+    padding: 0px 0px 5px 0px;
+    font-weight: 700;
+}
+
+.social img {
+    height: 50px;
+}
+
+.made-by {
+    width: auto;
+    display: inline-block;
+    margin: 0px;
+    
+    vertical-align: middle;
+    /* vertical-align: middle; why isn't this working to center the text horizontally? */
+}
+
+.made-by-text {
+    text-align: center;
+    position: relative;
+    vertical-align: center;
+}
+
+.made-by p {
+    font-size: 14px;
+
+}
+
+.made-by span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.last-thing {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+
+}
+
+.test-div {
+    width: auto; /* how can i capture the img and p as a unit and right-align the unit? */
+}
+
+.last-thing img {
+    height: 50px;
+    text-align: center;
+}
+
+.last-thing p {
+    text-align: center;
+}
+
+
+/* critter's right to left stacking */
+
+.container {
+    display: flex;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+    background-color:lightskyblue;
+}
+
+.right {
+    background-color:goldenrod;
+    width: 50%;
+}
+
+.left, .right {
+    padding: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .left, .right {
+        width: 100%;
+    }
+}
